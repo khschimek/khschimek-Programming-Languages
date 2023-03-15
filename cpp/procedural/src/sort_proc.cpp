@@ -31,6 +31,6 @@ vector<string> sort_procedural(vector<string> items) {
   return sort_vector(final);
 }
 
-void sort_proc(vector<string> items) {
+void sort_proc(vector<string> &items) {
   sort_procedural(items);
 }
