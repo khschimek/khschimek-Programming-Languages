@@ -10,7 +10,7 @@ TEST(RegEx,JsonStrings) {
   //
   // TODO: change your-ad-here to a regular expression that passes this test
   //
-  std::basic_regex re(R"=("\n)=",std::regex::extended);    
+  std::basic_regex re(R"=(your-ad-here)=",std::regex::extended);
 
   std::vector<std::string> pass = {
     R"=("")=",
@@ -24,7 +24,7 @@ TEST(RegEx,JsonStrings) {
     R"=("\n")=",
     R"=("\r")=",
     R"=("\t")=",
-    R"=("\uAD7F)=",
+    R"=("\uAD7F")=",
     R"=("\\x")=",
     R"=("\"'")=",
     R"=(" \/")=",
