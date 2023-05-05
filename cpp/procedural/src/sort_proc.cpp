@@ -9,7 +9,7 @@ vector<string> sort_vector(vector<string> items) {
   return sortedItems;
 }
 
-vector<string> sort_procedural(vector<string> items) {
+void sort_procedural(vector<string> &items) {
   int size=(int)items.size();
   vector<string> first, second, firstFinal, secondFinal, final;
   for(int i=0; i<size; i++) {
@@ -28,7 +28,6 @@ vector<string> sort_procedural(vector<string> items) {
   for(auto y: secondFinal) {
     final.push_back(y);
   }
-  return sort_vector(final);
 }
 
 void sort_proc(vector<string> &items) {
