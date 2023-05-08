@@ -28,6 +28,12 @@ void sort_procedural(vector<string> &items) {
   for(auto y: secondFinal) {
     final.push_back(y);
   }
+  sort(final.begin(), final.end());
+  items=final;
+}
+
+void new_sort(vector<string> &items) {
+  sort(items.begin(), items.end());
 }
 
 void sort_proc(vector<string> &items) {
